@@ -1,0 +1,16 @@
+{
+    "parent": "item/generated",
+    "textures": {
+        "layer0": "item/carrot_on_a_stick"
+    },
+
+    "overrides": [
+    {"predicate": {"custom_model_data":1110000}, "model": "item/series_1/gen_1/pumpgun/pumpgun_hipfire"},
+    {"predicate": {"custom_model_data":1110001}, "model": "item/series_1/gen_1/pumpgun/pumpgun_aim"},
+    {"predicate": {"custom_model_data":1110002}, "model": "item/series_1/gen_1/pumpgun/pumpgun_reload"},
+    {"predicate": {"custom_model_data":1110003}, "model": "item/series_1/gen_1/pumpgun/pumpgun_hipfire_knockback"},
+    {"predicate": {"custom_model_data":1111000}, "model": "item/series_1/gen_1/ak47/ak47_hipfire"},
+    {"predicate": {"custom_model_data":1111001}, "model": "item/series_1/gen_1/ak47/ak47_aim"},
+    {"predicate": {"custom_model_data":1111002}, "model": "item/series_1/gen_1/ak47/ak47_reload"}
+    ]
+}

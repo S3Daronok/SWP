@@ -1,0 +1,33 @@
+{
+    "daronok_weapon_pack_pumpgun_shoot": {
+        "subtitle": "Pumpgun shooting",
+        "sounds": [
+            "series_1/gen_1/pumpgun/pumpgun_shot_12_gauge_1",
+            "series_1/gen_1/pumpgun/pumpgun_shot_12_gauge_2",
+            "series_1/gen_1/pumpgun/pumpgun_shot_12_gauge_3",
+            "series_1/gen_1/pumpgun/pumpgun_shot_12_gauge_4",
+            "series_1/gen_1/pumpgun/pumpgun_shot_12_gauge_5"
+        ]
+    },
+    "daronok_weapon_pack_pumpgun_eject": {
+        "sounds": [
+            "series_1/gen_1/pumpgun/pumpgun_eject_12_gauge"
+        ]
+    },
+    "daronok_weapon_pack_pumpgun_reload": {
+        "subtitle": "Pumpgun reloading",
+        "sounds": [
+            "series_1/gen_1/pumpgun/pumpgun_reload_12_gauge_1",
+            "series_1/gen_1/pumpgun/pumpgun_reload_12_gauge_2",
+            "series_1/gen_1/pumpgun/pumpgun_reload_12_gauge_3",
+            "series_1/gen_1/pumpgun/pumpgun_reload_12_gauge_4"
+        ]
+    },
+    "daronok_weapon_pack_ak47_shoot": {
+        "subtitle": "AK-47 shooting",
+        "sounds": [
+            "series_1/gen_1/ak47/ak47_shot_1",
+            "series_1/gen_1/ak47/ak47_shot_2"
+        ]
+    }
+}

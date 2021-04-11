@@ -1,0 +1,1 @@
+data modify storage weapons SelectedItem set from entity @s SelectedItem

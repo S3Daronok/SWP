@@ -1,0 +1,3 @@
+function standard_weapon_pack:store_selected_item
+function standard_weapon_pack:pumpgun/pumpgun_skins/pumpgun_mode_0_skins
+function standard_weapon_pack:give_selected_item
