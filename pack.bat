@@ -1,13 +1,14 @@
 @echo off
-set /p "DOT_MINECRAFT=Enter the path of the .minecraft folder (%APPDATA%\.minecraft): " || set WORLD_NAME=%APPDATA%\.minecraft
-set /p "WORLD_NAME=Enter the name of the minecraft world: " || set DOT_MINECRAFT=%APPDATA%\.minecraft
-
-xcopy /s /i /q standard_weapons_datapack "%DOT_MINECRAFT%\resourcepacks\daronok_weapon_pack"
+set /p "DOT_MINECRAFT=Enter the path of the .minecraft folder (%APPDATA%\.minecraft): " || set DOT_MINECRAFT=%APPDATA%\.minecraft
+set /p "WORLD_NAME=Enter the name of the minecraft world: "
+xcopy /s /i /q standard_weapon_ressourcepack "%DOT_MINECRAFT%\resourcepacks\standard_weapon_ressourcepack"
 
 if not exist "%DOT_MINECRAFT%\saves\%WORLD_NAME%" goto ERROR
 
-xcopy /s /i /q standard_weapons_datapack "%DOT_MINECRAFT%\saves\%WORLD_NAME%\datapacks\standard_weapons_datapack"
+xcopy /s /i /q standard_weapon_datapack "%DOT_MINECRAFT%\saves\%WORLD_NAME%\datapacks\standard_weapon_datapack"
+pause
 exit /b
 
 :ERROR
 echo World could not be found
+pause
