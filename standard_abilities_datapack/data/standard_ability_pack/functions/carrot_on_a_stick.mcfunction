@@ -1,0 +1,6 @@
+execute as @s[nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{scan:1b}}},scores={carrotOnaStick=1..}] unless score @s scan_cooldown matches 1.. run function standard_ability_pack:scan
+execute as @s[nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{scan:1b}}}] run title @s actionbar {"score":{"name":"@s","objective":"scan_cooldown"},"bold":true,"color":"yellow"}
+execute as @s[nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{amped_weapons:1b}}},scores={carrotOnaStick=1..}] unless score @s amped_cooldown matches 1.. run function standard_ability_pack:amped_weapons
+execute as @s[nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{amped_weapons:1b}}},scores={amped_cooldown=400..}] run title @s actionbar [{"text":"<-","bold":true,"color":"dark_purple"},{"text":"AMPED","bold":true,"color":"white"},{"text":"->","bold":true,"color":"dark_purple"}]
+execute as @s[nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{amped_weapons:1b}}},scores={amped_cooldown=..400}] run title @s actionbar {"score":{"name":"@s","objective":"amped_cooldown"},"bold":true,"color":"dark_purple"}
+execute as @s[nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{ability:1b}}},scores={carrotOnaStick=1..}] run scoreboard players reset @s carrotOnaStick

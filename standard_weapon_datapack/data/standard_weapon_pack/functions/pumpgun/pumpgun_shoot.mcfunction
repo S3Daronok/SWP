@@ -19,10 +19,8 @@ execute at @s run teleport @s ~ ~ ~ ~-2 ~
 function standard_weapon_pack:pumpgun/pumpgun_secondary_shoot
 execute at @s run teleport @s ~ ~ ~ ~ ~4
 function standard_weapon_pack:pumpgun/pumpgun_secondary_shoot
-execute as @e[tag=!shooter] if score @s damage matches 1.. run scoreboard players set @s dummy 20
-execute as @e[tag=!shooter] if score @s damage matches 1.. run scoreboard players operation @s damage /= @s dummy
-execute as @e[tag=!shooter] if score @s damage matches 1.. run scoreboard players reset @s dummy
-execute as @e[tag=!shooter] if score @s damage matches 1.. run function standard_weapon_pack:damage_indicator
+execute as @a[scores={damage=1..}] run function standard_weapon_pack:apply_damage_player
+
 tag @s remove shooter 
 execute at @s run teleport @s ~ ~ ~ ~ ~-7
 execute as @s[scores={pumpgun_ammo=0}] run scoreboard players set @s pumpgun_cooldown 0

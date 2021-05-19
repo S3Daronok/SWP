@@ -1,3 +1,5 @@
+effect clear @a instant_damage
+effect clear @a resistance
 execute as @a[scores={carrotOnaStick=1}] run function standard_weapon_pack:carrot_on_a_stick
 execute as @a[scores={drop_carrotStick=1}] run function standard_weapon_pack:carrot_on_a_stick_drop
 execute as @a[nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick"}}] run function standard_weapon_pack:carrot_on_a_stick

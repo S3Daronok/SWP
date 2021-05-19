@@ -5,12 +5,22 @@
     },
 
     "overrides": [
+        {"predicate": {"custom_model_data":100}, "model": "item/abilities/radar"},
+        {"predicate": {"custom_model_data":101}, "model": "item/abilities/radar_inactive"},
+        {"predicate": {"custom_model_data":122}, "model": "item/valk/valk_q"},
+        {"predicate": {"custom_model_data":123}, "model": "item/valk/valk_ult"},
+        
     {"predicate": {"custom_model_data":1110000}, "model": "item/series_1/gen_1/pumpgun/pumpgun_hipfire"},
     {"predicate": {"custom_model_data":1110001}, "model": "item/series_1/gen_1/pumpgun/pumpgun_aim"},
     {"predicate": {"custom_model_data":1110002}, "model": "item/series_1/gen_1/pumpgun/pumpgun_reload"},
-    {"predicate": {"custom_model_data":1110003}, "model": "item/series_1/gen_1/pumpgun/pumpgun_hipfire_knockback"},
+    {"predicate": {"custom_model_data":1110010}, "model": "item/series_1/gen_1/pumpgun/jungle_camo/pumpgun_hipfire_jungle"},
+    {"predicate": {"custom_model_data":1110011}, "model": "item/series_1/gen_1/pumpgun/jungle_camo/pumpgun_aim_jungle"},
+    {"predicate": {"custom_model_data":1110012}, "model": "item/series_1/gen_1/pumpgun/jungle_camo/pumpgun_reload_jungle"},
     {"predicate": {"custom_model_data":1111000}, "model": "item/series_1/gen_1/ak47/ak47_hipfire"},
     {"predicate": {"custom_model_data":1111001}, "model": "item/series_1/gen_1/ak47/ak47_aim"},
-    {"predicate": {"custom_model_data":1111002}, "model": "item/series_1/gen_1/ak47/ak47_reload"}
+    {"predicate": {"custom_model_data":1111002}, "model": "item/series_1/gen_1/ak47/ak47_reload"},
+    {"predicate": {"custom_model_data":1111010}, "model": "item/series_1/gen_1/ak47/jungle_camo/ak47_hipfire_jungle"},
+    {"predicate": {"custom_model_data":1111011}, "model": "item/series_1/gen_1/ak47/jungle_camo/ak47_aim_jungle"},
+    {"predicate": {"custom_model_data":1111012}, "model": "item/series_1/gen_1/ak47/jungle_camo/ak47_reload_jungle"}
     ]
 }

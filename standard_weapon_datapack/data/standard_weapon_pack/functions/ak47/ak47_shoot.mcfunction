@@ -1,5 +1,5 @@
 scoreboard players remove @s ak47_ammo 1
-scoreboard players set @s range 40
+scoreboard players set @s range 80
 scoreboard players add @s ak47_cooldown 2
 scoreboard players reset @s carrotOnaStick
 tag @s add shooter

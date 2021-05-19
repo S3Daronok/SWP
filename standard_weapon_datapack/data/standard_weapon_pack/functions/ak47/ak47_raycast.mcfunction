@@ -2,6 +2,9 @@ execute unless entity @a[tag=shooter,scores={fire_ammo=1}] run particle crit ~ ~
 execute if entity @a[tag=shooter,scores={fire_ammo=1}] run particle flame ~ ~ ~ 0 0 0 0 1
 execute if entity @a[tag=shooter,scores={poison_ammo=1}] run particle entity_effect ~ ~ ~ 0.055 0.451 0.094 1 0
 execute as @e[dx=0,type=!armor_stand,type=!player] positioned ~-0.99 ~-0.99 ~-0.99 if entity @s[dx=0] run function standard_weapon_pack:ak47/ak47_apply_damage
+execute as @a[dx=0,tag=!shooter] positioned ~-0.99 ~-0.99 ~-0.99 if entity @s[dx=0] run scoreboard players add @s damage 30
+execute as @a[dx=0,tag=!shooter] positioned ~-0.99 ~-0.99 ~-0.99 if entity @s[dx=0] if entity @a[tag=shooter,tag=amped_weapons] run scoreboard players add @s damage 10 
+execute as @a[dx=0,tag=!shooter] positioned ~-0.99 ~-0.99 ~-0.99 if entity @s[dx=0] run function standard_weapon_pack:apply_damage_player
 scoreboard players remove @a[tag=shooter] range 1
 execute if score @a[tag=shooter,limit=1] range matches 1.. if block ~ ~ ~ air positioned ^ ^ ^0.5 run function standard_weapon_pack:ak47/ak47_raycast
 

@@ -1,0 +1,2 @@
+execute as @a[tag=this,limit=1] if block ~ ~ ~ air positioned ^ ^-.1 ^0.5 run function valk:valk_q_raycast
+execute as @a[tag=this,limit=1] unless block ^ ^-.05 ^.5 air run summon armor_stand ~ ~.3 ~ {Tags:["valk_target"],NoGravity:1b,Marker:1b,Invisible:1b}

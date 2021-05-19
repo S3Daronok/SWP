@@ -16,9 +16,11 @@ scoreboard objectives add Ammo dummy
 scoreboard objectives add damage dummy
 scoreboard objectives add ak47_ammo dummy
 scoreboard objectives add ak47_cooldown dummy
+scoreboard objectives add pistol_ammo dummy
+scoreboard objectives add pistol_cooldown dummy
 scoreboard objectives add customizer_skin dummy
 scoreboard objectives add customizer trigger
-
+forceload add 0 0
 
 scoreboard players enable @a customizer
 say habeldabeldudelda
