@@ -8,6 +8,8 @@ scoreboard objectives add ult_percent dummy
 scoreboard objectives add valk_q_cooldown dummy
 scoreboard objectives add valk_q_secs dummy
 scoreboard objectives add dummy dummy
+scoreboard objectives add valkyrie trigger
+scoreboard players enable @a valkyrie
 
 bossbar add valk_fuel {"text": "VTOL Jetpack","color":"aqua","bold": true}
 bossbar set valk_fuel max 120
